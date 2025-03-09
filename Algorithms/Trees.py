@@ -28,6 +28,20 @@ def dfs_print(graph, current):
                 stack.extend(reversed(graph[d]))
     print()
 
+def dfs_search(graph, start, search_item):
+    print("DFS Search")
+    visited, stack = set(), [start]
+
+    while stack:
+        node = stack.pop()
+        if node not in visited:
+            visited.add(node)
+            if node == search_item:
+                return(True)
+            if node in graph:
+                stack.extend(reversed(graph[node]))
+    return False
+
 graph = {
     'A': [('B', 4), ('C', 2)],
     'B': [('D', 4), ('E', 5)],
@@ -48,4 +62,6 @@ gr3 = {0: [1, 2],
 
 dfs_print(gr3, 0)
 bfs_print(gr3, 0)
+
+print(dfs_search(gr2, 'A', 'DE'))
 
