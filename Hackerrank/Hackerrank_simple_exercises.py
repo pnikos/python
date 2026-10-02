@@ -1,3 +1,81 @@
+
+## show shop
+
+n = int(input())
+l1 = list(map(int, input().split()))
+m = int(input())
+
+profit = 0
+for i in range(m):
+    size, price = map(int, input().split())
+    if size in l1:
+        profit += price
+        l1.remove(size)
+    print(l1)
+
+print(profit)
+
+exit(1)
+
+## .update
+
+n1 = int(input())
+l1 = list(map(int, input().split()))
+n2 = int(input())
+l3 = [] * n2
+for i in range(n2):
+    action, n3 = input().split()
+#    n3 = int(input())
+    l3[i] = list(map(int, input().split()))
+
+exit(1)
+
+
+
+
+## .difference operation
+
+n1 = int(input())
+l1 = list(map(int, input().split()))
+n2 = int(input())
+l2 = list(map(int, input().split()))
+
+def difference(n1,l1,n2,l2):
+    cnt = 0
+    for i in range(len(l1)):
+        found = False
+        for j in range(len(l2)):
+            if l1[i] == l2[j]:
+                found = True
+        if found == False:
+            cnt += 1
+
+    print(cnt)
+
+def symmetric_difference(n1, l1, n2, l2):
+    cnt = 0
+    for i in range(len(l1)):
+        found = False
+        for j in range(len(l2)):
+            if l1[i] == l2[j]:
+                found = True
+        if found == False:
+            cnt += 1
+
+    for i in range(len(l2)):
+        found = False
+        for j in range(len(l1)):
+            if l2[i] == l1[j]:
+                found = True
+        if found == False:
+            cnt += 1
+
+    print(cnt)
+
+symmetric_difference(n1,l1,n2,l2)
+exit(1)
+
+
 def swap_case(s):
     str = ""
     for i in range(0, len(s)):
@@ -318,3 +396,11 @@ if __name__ == '__main__':
     s="BANANA"
     minion_game(s)
 exit(1)
+
+import cmath
+
+a = input().split('+')
+
+print(abs(complex(float(a[0]), float(a[1][:1]))))
+print(cmath.phase(complex(float(a[0]), float(a[1][:1]))))
+
