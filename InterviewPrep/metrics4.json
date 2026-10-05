@@ -1,0 +1,25 @@
+{
+  "hosts": [
+    {
+      "name": "app01",
+      "services": [
+        {"name": "api", "cpu": 82, "memory": 4096},
+        {"name": "worker", "cpu": 45, "memory": 2048}
+      ]
+    },
+    {
+      "name": "app02",
+      "services": [
+        {"name": "api", "cpu": 91, "memory": 8192},
+        {"name": "worker", "cpu": 73, "memory": 4096}
+      ]
+    },
+    {
+      "name": "app03",
+      "services": [
+        {"name": "api", "cpu": 65, "memory": 2048},
+        {"name": "worker", "cpu": 88, "memory": 6144}
+      ]
+    }
+  ]
+}

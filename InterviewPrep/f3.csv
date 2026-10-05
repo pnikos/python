@@ -1,0 +1,7 @@
+timestamp,service,endpoint,duration,status
+10:00:01,api,/login,120,200
+10:00:02,api,/trade,850,200
+10:00:03,api,/login,1500,500
+10:00:04,web,/login,300,200
+10:00:05,api,/trade,1200,503
+10:00:06,api,/login,200,200
