@@ -1,0 +1,5 @@
+{"timestamp":"10:00:01","service":"api","endpoint":"/login","duration":120,"status":200}
+{"timestamp":"10:00:02","service":"api","endpoint":"/trade","duration":850,"status":200}
+{"timestamp":"10:00:03","service":"api","endpoint":"/login","duration":1500,"status":500}
+{"timestamp":"10:00:04","service":"web","endpoint":"/login","duration":300,"statvus":200}
+{"timestamp":"10:00:05","service":"api","endpoint":"/trade","duration":1200,"status":503}

@@ -1,0 +1,28 @@
+{
+  "host": "app01",
+  "timestamp": "2026-10-04T10:00:00Z",
+  "metrics": [
+    {
+      "name": "cpu",
+      "values": {
+        "user": 35,
+        "system": 12,
+        "idle": 53
+      }
+    },
+    {
+      "name": "memory",
+      "values": {
+        "used_mb": 7420,
+        "free_mb": 2580
+      }
+    },
+    {
+      "name": "disk",
+      "values": {
+        "read_mb": 120,
+        "write_mb": 80
+      }
+    }
+  ]
+}

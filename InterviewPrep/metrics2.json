@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "name": "api",
+      "host": "app01",
+      "metrics": {
+        "cpu": 72,
+        "memory_mb": 4096
+      }
+    },
+    {
+      "name": "database",
+      "host": "db01",
+      "metrics": {
+        "cpu": 91
+      }
+    },
+    {
+      "name": "cache",
+      "host": "cache01"
+    },
+    {
+      "name": "worker",
+      "host": "worker01",
+      "metrics": {
+        "cpu": "not_available",
+        "memory_mb": 2048
+      }
+    },
+    {
+      "host": "worker02",
+      "metrics": {
+        "cpu": 88,
+        "memory_mb": 1024
+      }
+    }
+  ]
+}

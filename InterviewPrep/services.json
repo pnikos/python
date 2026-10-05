@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "name": "api",
+      "host": "app01",
+      "port": 8080,
+      "healthy": true
+    },
+    {
+      "name": "database",
+      "host": "db01",
+      "port": 5432,
+      "healthy": false
+    },
+    {
+      "name": "cache",
+      "host": "cache01",
+      "port": 6379,
+      "healthy": true
+    }
+  ]
+}
