@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "metadata": {
+        "name": "api-7d8f9c",
+        "namespace": "prod"
+      },
+      "status": {
+        "phase": "Running"
+      }
+    },
+    {
+      "metadata": {
+        "name": "worker-5a21bc",
+        "namespace": "prod"
+      },
+      "status": {
+        "phase": "Pending"
+      }
+    },
+    {
+      "metadata": {
+        "name": "api-123abc",
+        "namespace": "dev"
+      },
+      "status": {
+        "phase": "Failed"
+      }
+    },
+    {
+      "metadata": {
+        "name": "worker-99xyz",
+        "namespace": "prod"
+      },
+      "status": {
+        "phase": "Running"
+      }
+    }
+  ]
+}

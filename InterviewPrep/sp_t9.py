@@ -116,3 +116,13 @@ def parse_key_values(line):
 	return data
 
 print(parse_key_values("name=GetCustomer db=customer duration=183 rows=42"))
+print("="*40)
+
+
+def parse_key_values(line):
+	pairs = re.findall(r"(\w+)=(\S+)", line)
+	data = dict(pairs)
+
+	return data
+
+print(parse_key_values("name=GetCustomer db=customer duration=183 rows=42"))

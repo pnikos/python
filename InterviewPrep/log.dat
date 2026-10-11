@@ -1,0 +1,9 @@
+2026-10-01T18:00:01Z DB_QUERY name=GetCustomer db=customer duration=183 rows=42
+2026-10-01T18:00:02Z DB_QUERY name=GetOrders db=orders duration=81183 rows=42
+2026-10-01T18:00:03Z HTTP_REQUEST method=GET path=/login duration=25 status=200
+2026-10-01T18:00:04Z DB_QUERY name=GetCustomer db=customer duration=250 rows=12
+2026-10-01T18:00:05Z DB_QUERY name=BrokenQuery db=customer duration=abc rows=10
+2026-10-01T18:00:06Z DB_QUERY name=MissingRows db=customer duration=500
+2026-10-01T18:00:07Z DB_QUERY name=SlowQuery db="customer uno" duration=1200 rows=5
+2026-10-01T18:00:08Z DB_QUERY name=AnotherSlow db=orders duration=900 rows=3
+2026-10-01T18:00:09Z DB_QUERY name=GetCustomer db=customer duration=350 rows=20
